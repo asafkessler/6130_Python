@@ -53,7 +53,11 @@ if __name__ == "__main__":
     if bool_able_matrix_text:
         test_matrix_function()
 
-    # Testing matrix multiplication
+    # Testing matrix mex2a.py
+    # ex2a_election_code.py
+    # ex2b.py
+    # ex2tests.py
+    # maze_example.csvultiplication
     if bool_test_matrix_mult:
         test_matrix_mult()
 

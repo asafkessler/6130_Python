@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX2/ex2a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX2/ex2a_election_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX2/ex2b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX2/ex2tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX2/maze_example.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX2/mytoolbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX4/ex4a tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX4/ex4a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX4/ex4b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX4/ex4tests_students.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX5/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX6/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX7/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/EX8/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_6130/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_6130/EX3/ex3tests_students.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX3/ex3tests_students.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +39,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../Python37/Lib/copy.py" root0="SKIP_INSPECTION" />
   </component>
@@ -24,6 +49,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2N5zcF2679oo2ELoXkLK2Appzfz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,6 +58,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/devl/work/6130 Python&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -46,8 +73,35 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\devl\work\course_6130\EX2" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\devl\work\6130 Python\course_6130" />
+      <recent name="C:\devl\work\6130 Python\course_6130\EX4" />
+      <recent name="C:\devl\work\6130 Python\course_6130\EX2" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.ex3tests_students">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ex1tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,7 +278,8 @@
       <workItem from="1682602376111" duration="14564000" />
       <workItem from="1682875226978" duration="8644000" />
       <workItem from="1682967375114" duration="1343000" />
-      <workItem from="1683640950508" duration="1639000" />
+      <workItem from="1683640950508" duration="3126000" />
+      <workItem from="1683718499631" duration="1890000" />
     </task>
     <servers />
   </component>
@@ -248,11 +303,6 @@
           <url>file://$PROJECT_DIR$/course_6130/EX1/ex1tests.py</url>
           <line>37</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/course_6130/EX2/ex2b.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/course_6130/EX3/ex3.py</url>
