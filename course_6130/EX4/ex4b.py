@@ -17,6 +17,7 @@ class MyImage(object):
         pass
 
     def adding_squared_smiley_face(self, upper_left, bottom_right, smiley_color):
+        # this is noam changing things
         pass
 
     def blur_certain_area(self, upper_left, bottom_right):
