@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.image as img
 
 class MyImage(object):
 
@@ -27,8 +29,17 @@ class MyImage(object):
         return self.img_array
         pass
 
+    def present_image(self):
+        img_var = img.imread('C:\\devl\\work\\6130 Python\\course_6130\\EX4\\test_image.jpg')
+        plt.imshow(img_var)
+        plt.show()
+
 
 def image_hist(img_array):
     pass
+
+if __name__ == "__main__":
+    img_class = MyImage("x")
+    img_class.present_image()
 
 
