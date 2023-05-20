@@ -1,8 +1,7 @@
 import copy
-
 import numpy as np
-# import matplotlib.pyplot as plt
-# import matplotlib.image as img
+import matplotlib.pyplot as plt
+import matplotlib.image as img
 import PIL
 from PIL import Image
 

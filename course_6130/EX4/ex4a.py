@@ -1,5 +1,5 @@
 # 315535518, 316539196
-# 3
+# 5
 
 import numpy as np
 
@@ -8,7 +8,7 @@ def find_largest_n(arr, number):
     """
     This function finds the largest number in a given array.
     :param arr: given array.
-    :param number: how many max numbers we want from the original array.
+    :param number: how many max numbers we want to get from the original array.
     :return: new array with the max values.
     """
 
