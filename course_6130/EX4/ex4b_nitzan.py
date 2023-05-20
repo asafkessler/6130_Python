@@ -5,7 +5,6 @@ import numpy as np
 import matplotlib.pyplot as screen
 import matplotlib.image as img
 from scipy.ndimage.filters import gaussian_filter
-from scipy import ndimage, signal
 
 class MyImage(object):
 
@@ -107,26 +106,45 @@ def image_hist(img_array):
     :rtype: Array
     """
 
-    Red = [0 for i in range(0, 256)]
-    Green = [0 for i in range(0, 256)]
-    Blue  = [0 for i in range(0, 256)]
+    Red = [0 for index in range(0, 256)]
+    Green = [0 for index in range(0, 256)]
+    Blue  = [0 for index in range(0, 256)]
 
-    for curr_list in img_array:
-        for sublist in curr_list:
-            Red[sublist[0]] += 1
-            Green[sublist[1]] += 1
-            Blue[sublist[2]] += 1
+    for first_dim in img_array:
+        for second_dim in first_dim:
+            Red[second_dim[0]] += 1
+            Green[second_dim[1]] += 1
+            Blue[second_dim[2]] += 1
     return np.array(Red), np.array(Green), np.array(Blue)
 
 
 if __name__ == "__main__":
     np_img_array = img.imread(r".\Flower.jpg")
     image_class = MyImage(np_img_array)
-    image_class.blur_certain_area([10, 10], [600, 600])
+
+    R,G,B = image_hist(image_class.get_img())
+
+    hist_R = np.empty(shape=(2, 256))
+    hist_R[1] = R
+    hist_R[0] = 0
+    hist_G = np.empty(shape=(2, 256))
+    hist_G[1] = G
+    hist_G[0] = 0
+    hist_B = np.empty(shape=(2, 256))
+    hist_B[1] = B
+    hist_B[0] = 0
+    # screen.bar(x=range(0, 256), height=10, yerr=hist_R, ecolor = [1,0,0,1])
+    # screen.bar(x=range(0, 256), height=10, yerr=hist_G, ecolor = [0,1,0,1])
+    screen.bar(x=range(0, 256), height=10, yerr=hist_B, ecolor = [0,0,1,1])
+
+    fig, axs = screen.subplots(2, 2)
+    axs[0, 0].bar(x=range(0, 256), height=10, yerr=hist_R, ecolor = [1,0,0,1])
+    axs[0, 0].set_title('Red')
+    axs[0, 1].bar(x=range(0, 256), height=10, yerr=hist_G, ecolor = [0,1,0,1])
+    axs[0, 1].set_title('Green')
+    axs[1, 0].bar(x=range(0, 256), height=10, yerr=hist_B, ecolor = [0,0,1,1])
+    axs[1, 0].set_title('Blue')
 
     'Just Trying to show the image after modification '
-    screen.imshow(image_class.get_img())
+    # screen.imshow(image_class.get_img())
     screen.show()
-
-    # img = misc.face()
-    # image_sizes = np_img_array.shape
