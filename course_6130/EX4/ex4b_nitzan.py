@@ -4,8 +4,8 @@
 import numpy as np
 import matplotlib.pyplot as screen
 import matplotlib.image as img
-from scipy import misc
-from scipy import ndimage
+from scipy.ndimage.filters import gaussian_filter
+from scipy import ndimage, signal
 
 class MyImage(object):
 
@@ -28,11 +28,7 @@ class MyImage(object):
         :rtype: (pass)
         """
         self.img_array = self.img_array.copy()
-        self.img_array[upper_left[1]:bottom_right[1],upper_left[0]:bottom_right[0]] = [0,0,0]
-
-        'Just Trying to show the image after modification '
-        screen.imshow(self.img_array)
-        screen.show()
+        self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]] = [0, 0, 0]
 
     def adding_squared_smiley_face(self, upper_left, bottom_right, smiley_color):
         """
@@ -52,25 +48,27 @@ class MyImage(object):
         self.img_array = self.img_array.copy()
         self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]] = smiley_color
 
-        # mouth: mul(mouth bottom left),mbr(mouth bottom right)
+        # creating the mouth
 
-        mul = [int(upper_left[0] + 0.25 * (bottom_right[0] - upper_left[0])),
+        mouth_bottom_left = [int(upper_left[0] + 0.25 * (bottom_right[0] - upper_left[0])),
                int(upper_left[1] + 0.65 * (bottom_right[1] - upper_left[1]))]
-        mbr = [int(bottom_right[0] - 0.25 * (bottom_right[0] - upper_left[0])),
+        mouth_bottom_right = [int(bottom_right[0] - 0.25 * (bottom_right[0] - upper_left[0])),
                int(upper_left[1] + 0.75 * (bottom_right[1] - upper_left[1]))]
-        self.im[mul[1]:mbr[1], mul[0]:mbr[0]] = [0, 0, 0]
+        self.img_array[mouth_bottom_left[1]:mouth_bottom_right[1], mouth_bottom_left[0]:mouth_bottom_right[0]] = [0, 0, 0]
 
-        # eyes: elul(left upper corner),elbr(right bottom corner), for each eye
-        elul = [int(upper_left[0] + 0.25 * (bottom_right[0] - upper_left[0])),
+        # creating the eyes, first
+        left_upper_corner = [int(upper_left[0] + 0.25 * (bottom_right[0] - upper_left[0])),
                 int(upper_left[1] + 0.2 * (bottom_right[1] - upper_left[1]))]
-        elbr = [int(bottom_right[0] - 0.6 * (bottom_right[0] - upper_left[0])),
+        right_bottom_corner = [int(bottom_right[0] - 0.6 * (bottom_right[0] - upper_left[0])),
                 int(upper_left[1] + 0.3 * (bottom_right[1] - upper_left[1]))]
-        self.im[elul[1]:elbr[1], elul[0]:elbr[0]] = [0, 0, 0]
-        elul = [int(upper_left[0] + 0.6 * (bottom_right[0] - upper_left[0])),
+        self.img_array[left_upper_corner[1]:right_bottom_corner[1], left_upper_corner[0]:right_bottom_corner[0]] = [0, 0, 0]
+
+        # creating the eyes, left
+        left_upper_corner = [int(upper_left[0] + 0.6 * (bottom_right[0] - upper_left[0])),
                 int(upper_left[1] + 0.2 * (bottom_right[1] - upper_left[1]))]
-        elbr = [int(bottom_right[0] - 0.25 * (bottom_right[0] - upper_left[0])),
+        right_bottom_corner = [int(bottom_right[0] - 0.25 * (bottom_right[0] - upper_left[0])),
                 int(upper_left[1] + 0.3 * (bottom_right[1] - upper_left[1]))]
-        self.im[elul[1]:elbr[1], elul[0]:elbr[0]] = [0, 0, 0]
+        self.img_array[left_upper_corner[1]:right_bottom_corner[1], left_upper_corner[0]:right_bottom_corner[0]] = [0, 0, 0]
 
     def blur_certain_area(self, upper_left, bottom_right):
         """
@@ -86,9 +84,9 @@ class MyImage(object):
 
         spliced_area = self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]]
 
-        blurred_area = ndimage.uniform_filter(spliced_area, size=(1000, 1000, 1))
+        blurred = gaussian_filter(spliced_area ,sigma = (9, 9, 0))
 
-        self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]] = blurred_area
+        self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]] = blurred
 
     def get_img(self):
         """
@@ -97,6 +95,7 @@ class MyImage(object):
         :rtype: numpy N Dim Array
         """
         return self.img_array
+
 
 def image_hist(img_array):
     """
@@ -108,23 +107,26 @@ def image_hist(img_array):
     :rtype: Array
     """
 
-    R = [0 for i in range(0, 256)]
-    G = [0 for i in range(0, 256)]
-    B = [0 for i in range(0, 256)]
-    for list in img_array:
-        for sublist in list:
-            R[sublist[0]] += 1
-            G[sublist[1]] += 1
-            B[sublist[2]] += 1
-    return np.array(R), np.array(G), np.array(B)
+    Red = [0 for i in range(0, 256)]
+    Green = [0 for i in range(0, 256)]
+    Blue  = [0 for i in range(0, 256)]
+
+    for curr_list in img_array:
+        for sublist in curr_list:
+            Red[sublist[0]] += 1
+            Green[sublist[1]] += 1
+            Blue[sublist[2]] += 1
+    return np.array(Red), np.array(Green), np.array(Blue)
 
 
 if __name__ == "__main__":
-    np_img_array = img.imread(R".\low_resu_flower.jpg")
-    # screen.imshow(np_img_array)
-    # screen.show()
+    np_img_array = img.imread(r".\Flower.jpg")
+    image_class = MyImage(np_img_array)
+    image_class.blur_certain_area([10, 10], [600, 600])
+
+    'Just Trying to show the image after modification '
+    screen.imshow(image_class.get_img())
+    screen.show()
+
     # img = misc.face()
     # image_sizes = np_img_array.shape
-    # image_copy_class = MyImage(np_img_array)
-    # image_copy_class.turn_area_black([10, 300], [300, 10])
-    print(image_hist(np_img_array))

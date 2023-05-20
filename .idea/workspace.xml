@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="20/05/23&#10;AsafKessler&#10;Part a All Tested And ready for shipment&#10;Added prints for the testing file.">
-      <change afterPath="$PROJECT_DIR$/course_6130/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/.idea/course_6130.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX4/istockphoto-484757150-612x612.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="20/05/23&#10;AsafKessler&#10;Part b without testing">
+      <change afterPath="$PROJECT_DIR$/course_6130/EX4/Flower.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_6130/EX4/ex4b.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX4/ex4b.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course_6130/EX4/ex4b_nitzan.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX4/ex4b_nitzan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_6130/EX4/istockphoto-484757150-612x612.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX4/brain.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,9 +182,6 @@
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course_6130/EX4" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -286,7 +275,7 @@
       <workItem from="1684575834099" duration="312000" />
       <workItem from="1684581967012" duration="9696000" />
       <workItem from="1684602912219" duration="626000" />
-      <workItem from="1684603629800" duration="2065000" />
+      <workItem from="1684603629800" duration="5625000" />
     </task>
     <task id="LOCAL-00001" summary="Ex4 up tp date&#10;EX1 Memory management">
       <created>1683967548662</created>
@@ -309,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684597464547</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20/05/23&#10;AsafKessler&#10;Part b without testing">
+      <created>1684605862479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684605862479</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +327,8 @@
     <MESSAGE value="Ex4 up tp date&#10;EX1 Memory management" />
     <MESSAGE value="15/04 changes &#10;Ex4" />
     <MESSAGE value="20/05/23&#10;AsafKessler&#10;Part a All Tested And ready for shipment&#10;Added prints for the testing file." />
-    <option name="LAST_COMMIT_MESSAGE" value="20/05/23&#10;AsafKessler&#10;Part a All Tested And ready for shipment&#10;Added prints for the testing file." />
+    <MESSAGE value="20/05/23&#10;AsafKessler&#10;Part b without testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="20/05/23&#10;AsafKessler&#10;Part b without testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
