@@ -11,22 +11,17 @@ class MyImage(object):
         self.img_array = img_array
 
     def turn_area_black(self, upper_left, bottom_right):
-        """
-        :param upper_left:
-        :param bottom_right:
-        :return:
-        """
         image_copy = self.img_array
         image_copy[upper_left[0]:bottom_right[0], upper_left[1]:bottom_right[1]] = [0, 0, 0]
         MyImage.present_image(image_copy)
 
-        pass
 
     def adding_squared_smiley_face(self, upper_left, bottom_right, smiley_color):
         # this is noam changing things
         pass
 
     def blur_certain_area(self, upper_left, bottom_right):
+
         pass
 
     def present_image(self, array_data):
