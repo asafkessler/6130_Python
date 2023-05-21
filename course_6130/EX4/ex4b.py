@@ -6,6 +6,7 @@ import matplotlib.pyplot as screen
 import matplotlib.image as img
 from scipy.ndimage.filters import gaussian_filter
 
+
 class MyImage(object):
 
     def __init__(self, img_array):
@@ -50,24 +51,29 @@ class MyImage(object):
         # creating the mouth
 
         mouth_bottom_left = [int(upper_left[0] + 0.25 * (bottom_right[0] - upper_left[0])),
-               int(upper_left[1] + 0.65 * (bottom_right[1] - upper_left[1]))]
+                             int(upper_left[1] + 0.65 * (bottom_right[1] - upper_left[1]))]
         mouth_bottom_right = [int(bottom_right[0] - 0.25 * (bottom_right[0] - upper_left[0])),
-               int(upper_left[1] + 0.75 * (bottom_right[1] - upper_left[1]))]
-        self.img_array[mouth_bottom_left[1]:mouth_bottom_right[1], mouth_bottom_left[0]:mouth_bottom_right[0]] = [0, 0, 0]
+                              int(upper_left[1] + 0.75 * (bottom_right[1] - upper_left[1]))]
+        self.img_array[mouth_bottom_left[1]:mouth_bottom_right[1], mouth_bottom_left[0]:mouth_bottom_right[0]] = [0, 0,
+                                                                                                                  0]
 
         # creating the eyes, first
         left_upper_corner = [int(upper_left[0] + 0.25 * (bottom_right[0] - upper_left[0])),
-                int(upper_left[1] + 0.2 * (bottom_right[1] - upper_left[1]))]
+                             int(upper_left[1] + 0.2 * (bottom_right[1] - upper_left[1]))]
         right_bottom_corner = [int(bottom_right[0] - 0.6 * (bottom_right[0] - upper_left[0])),
-                int(upper_left[1] + 0.3 * (bottom_right[1] - upper_left[1]))]
-        self.img_array[left_upper_corner[1]:right_bottom_corner[1], left_upper_corner[0]:right_bottom_corner[0]] = [0, 0, 0]
+                               int(upper_left[1] + 0.3 * (bottom_right[1] - upper_left[1]))]
+        self.img_array[left_upper_corner[1]:right_bottom_corner[1], left_upper_corner[0]:right_bottom_corner[0]] = [0,
+                                                                                                                    0,
+                                                                                                                    0]
 
         # creating the eyes, left
         left_upper_corner = [int(upper_left[0] + 0.6 * (bottom_right[0] - upper_left[0])),
-                int(upper_left[1] + 0.2 * (bottom_right[1] - upper_left[1]))]
+                             int(upper_left[1] + 0.2 * (bottom_right[1] - upper_left[1]))]
         right_bottom_corner = [int(bottom_right[0] - 0.25 * (bottom_right[0] - upper_left[0])),
-                int(upper_left[1] + 0.3 * (bottom_right[1] - upper_left[1]))]
-        self.img_array[left_upper_corner[1]:right_bottom_corner[1], left_upper_corner[0]:right_bottom_corner[0]] = [0, 0, 0]
+                               int(upper_left[1] + 0.3 * (bottom_right[1] - upper_left[1]))]
+        self.img_array[left_upper_corner[1]:right_bottom_corner[1], left_upper_corner[0]:right_bottom_corner[0]] = [0,
+                                                                                                                    0,
+                                                                                                                    0]
 
     def blur_certain_area(self, upper_left, bottom_right):
         """
@@ -83,7 +89,7 @@ class MyImage(object):
 
         spliced_area = self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]]
 
-        blurred = gaussian_filter(spliced_area ,sigma = (9, 9, 0))
+        blurred = gaussian_filter(spliced_area, sigma=(9, 9, 0))
 
         self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]] = blurred
 
@@ -103,12 +109,12 @@ def image_hist(img_array):
     :param img_array: a given image data array
     :type img_array: numpy N Dim Array
     :return: it returns a histogram for each colour(rgb value) in the given image.
-    :rtype: Array
+    :rtype: Numpy array
     """
 
     Red = [0 for index in range(0, 256)]
     Green = [0 for index in range(0, 256)]
-    Blue  = [0 for index in range(0, 256)]
+    Blue = [0 for index in range(0, 256)]
 
     for first_dim in img_array:
         for second_dim in first_dim:

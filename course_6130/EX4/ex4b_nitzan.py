@@ -83,7 +83,7 @@ class MyImage(object):
 
         spliced_area = self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]]
 
-        blurred = gaussian_filter(spliced_area ,sigma = (9, 9, 0))
+        blurred = gaussian_filter(spliced_area ,sigma = (500, 500, 0))
 
         self.img_array[upper_left[1]:bottom_right[1], upper_left[0]:bottom_right[0]] = blurred
 
@@ -121,7 +121,7 @@ def image_hist(img_array):
 if __name__ == "__main__":
     np_img_array = img.imread(r".\Flower.jpg")
     image_class = MyImage(np_img_array)
-
+    image_class.adding_squared_smiley_face([10,10], [300,300], [255,0,0])
     R,G,B = image_hist(image_class.get_img())
 
     hist_R = np.empty(shape=(2, 256))
@@ -133,9 +133,10 @@ if __name__ == "__main__":
     hist_B = np.empty(shape=(2, 256))
     hist_B[1] = B
     hist_B[0] = 0
+
     # screen.bar(x=range(0, 256), height=10, yerr=hist_R, ecolor = [1,0,0,1])
     # screen.bar(x=range(0, 256), height=10, yerr=hist_G, ecolor = [0,1,0,1])
-    screen.bar(x=range(0, 256), height=10, yerr=hist_B, ecolor = [0,0,1,1])
+    # screen.bar(x=range(0, 256), height=10, yerr=hist_B, ecolor = [0,0,1,1])
 
     fig, axs = screen.subplots(2, 2)
     axs[0, 0].bar(x=range(0, 256), height=10, yerr=hist_R, ecolor = [1,0,0,1])
@@ -146,5 +147,6 @@ if __name__ == "__main__":
     axs[1, 0].set_title('Blue')
 
     'Just Trying to show the image after modification '
-    # screen.imshow(image_class.get_img())
+    screen.title("Flower With Smily")
+    screen.imshow(image_class.get_img())
     screen.show()
