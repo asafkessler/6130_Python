@@ -92,8 +92,9 @@ class Matrix(object):
         :param other_mat: second matrix
         :return: change the first matrix to the multiple of the two of them.
         """
-        matrix_copy = [[0 for index in range(self.n_rows)] for index in range(other_mat.n_cols)]
-        if self.n_rows != other_mat.n_cols:
+        matrix_copy = [[0 for index in range(other_mat.n_cols)] for index in range(self.n_rows)] # Right Size
+        # matrix_copy = [[0 for index in range(self.n_cols)] for index in range(other_mat.n_rows)] # Miss Size
+        if self.n_cols != other_mat.n_rows: # change
            raise Exception("Matrix Multiplication Is Not Valid.")
         else:
             # row number
