@@ -20,11 +20,11 @@ def test_matrix_function():
     # assert (matrix_A.mat == [[-5, -6], [10, 12], [3, 4]])
 
 def test_matrix_mult():
-    matrix_A = Matrix(4, 2, [-1, 2, 3, 4, 5, 6 ,7 ,8])
-    matrix_B = Matrix(2, 3, [-1, 2, 3, 4, 5, 6])
+    matrix_A = Matrix(2, 3, [-1, 2, 3, 4, 5, 6])
+    matrix_B = Matrix(3, 1, [-1, 2, 1])
     matrix_A.matrix_mult(matrix_B)
     # assert (matrix_B.mat == [[-1, 2, 3], [4, 5, 6]])
-    assert(matrix_A.mat == [[9, 8, 9], [13, 26, 33], [19, 40, 51], [25, 54 ,69]])
+    assert(matrix_A.mat == [[8],[12]])
 
 def test_square_matrix():
     matrix_A = Matrix(3, 2, [1, 2, 3, 4, 5, 6])
