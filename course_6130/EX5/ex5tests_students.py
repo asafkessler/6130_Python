@@ -12,7 +12,7 @@ if __name__ == "__main__":
         df_filtered = df_filtered.reset_index(drop=True)
         df_answer_test1 = pd.DataFrame(data={'col1': [2, 3], 'col2': [4, 5]})  # the correct answer
         df_answer_test1 = df_answer_test1.reset_index(drop=True)
-        assert (df_filtered.equals(df_answer_test0))
+        assert (df_filtered.equals(df_answer_test1))
 
         # A2
         df = pd.DataFrame(data={'col2': [3, 4, 5, 6, 7], 'col1': [1, 2, 3, 4, 5]})

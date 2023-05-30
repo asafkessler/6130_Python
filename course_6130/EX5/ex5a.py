@@ -51,3 +51,17 @@ def double_special_letters(df, col_name_letter, col_name_value, col_name_results
 # 4
 def put_row_items_together(df, col_name_results):
     pass
+    # # Create an empty list
+    # Row_list = []
+    #
+    # #Iterate over each row
+    # for rows in df.iterrows
+    #     # Create list for the current row
+    #     my_list = [rows., rows.Event, rows.Cost]
+    #     # place it in the data frame
+    #     new_df = df
+    #     new_df[col_name_results] = my_list
+    # output
+    # return new_df
+
+print(x.columns)
