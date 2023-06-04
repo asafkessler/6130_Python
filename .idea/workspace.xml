@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="21/05/23&#10;AsafKessler&#10;sdghj">
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_10.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_3.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_4.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_5.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_6.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_7.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_8.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_imdb_episode_season_9.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/friends_quotes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_6130/EX5/rating_all_imdb.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finishing up EX5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_6130/EX5/ex5a.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX5/ex5a.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course_6130/EX5/ex5b.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX5/ex5b.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +66,7 @@
       <recent name="C:\devl\work\6130 Python\course_6130\EX2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex5tests_students">
+  <component name="RunManager" selected="Python.ex5b">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,20 +133,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex5a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex5b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course_6130/EX5" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\devl\work\6130 Python\course_6130\EX5\ex5a.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course_6130/EX5/ex5b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,9 +178,6 @@
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course_6130/EX5" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -261,6 +239,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex5b" />
         <item itemvalue="Python.ex5tests_students" />
         <item itemvalue="Python.ex5a (1)" />
         <item itemvalue="Python.ex5b_version2" />
@@ -293,7 +272,7 @@
       <workItem from="1685706791528" duration="2854000" />
       <workItem from="1685813479340" duration="14036000" />
       <workItem from="1685887120325" duration="949000" />
-      <workItem from="1685899156154" duration="1158000" />
+      <workItem from="1685899156154" duration="2933000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -302,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685458633650</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finishing up EX5">
+      <created>1685900378628</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685900378628</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +307,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="21/05/23&#10;AsafKessler&#10;sdghj" />
-    <option name="LAST_COMMIT_MESSAGE" value="21/05/23&#10;AsafKessler&#10;sdghj" />
+    <MESSAGE value="finishing up EX5" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishing up EX5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -356,6 +343,11 @@
           <line>103</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/course_6130/EX5/ex5b.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -364,6 +356,7 @@
     <SUITE FILE_PATH="coverage/6130_Python$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1685629542597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/6130_Python$ex5b_version2.coverage" NAME="ex5b_version2 Coverage Results" MODIFIED="1685817321166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX5" />
     <SUITE FILE_PATH="coverage/6130_Python$Pong__2_.coverage" NAME="Pong (2) Coverage Results" MODIFIED="1685630082186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX6" />
+    <SUITE FILE_PATH="coverage/6130_Python$ex5b.coverage" NAME="ex5b Coverage Results" MODIFIED="1685901999845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX5" />
     <SUITE FILE_PATH="coverage/6130_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1685629428547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/6130_Python$ex3tests_students.coverage" NAME="ex3tests_students Coverage Results" MODIFIED="1684767786323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX3" />
     <SUITE FILE_PATH="coverage/6130_Python$ex2a.coverage" NAME="ex2a Coverage Results" MODIFIED="1685629444162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX2" />

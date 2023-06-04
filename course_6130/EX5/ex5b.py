@@ -4,8 +4,6 @@
 import glob
 import pandas as pd
 
-PATH = r'C:\Users\asafk\Desktop\Hebrow Univarcity\First Year\Semester B\Python Cognitive Science\EX5\friends_datasets_ex5'
-
 def get_file_name_list_in_folder(folder_path):
     files_names = glob.glob(folder_path + r'\friends_imdb_episode_season_*')
     return list(files_names)
@@ -119,7 +117,7 @@ def who_said_it(csv_folder, character_name, phrase):
     # creating data Frame and parameters
     rel_phrase = phrase.lower()
     rel_char = character_name.lower()
-    df_lines = pd.read_csv('\\friends_quotes.csv')
+    df_lines = pd.read_csv(csv_folder + r'\friends_quotes.csv')
     df_lines_per_char = df_lines
     df_lines_per_char['quote'] = df_lines_per_char.apply(lambda l: l['quote'].lower(), axis=1)
     df_lines_per_char['author'] = df_lines_per_char.apply(lambda l: l['author'].lower(), axis=1)
@@ -130,6 +128,3 @@ def who_said_it(csv_folder, character_name, phrase):
     num_of_phrase = df_final.shape[0]
 
     return num_of_phrase
-
-
-
