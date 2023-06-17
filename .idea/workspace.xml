@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="11.06 &#10;starting EX6">
-      <change afterPath="$PROJECT_DIR$/course_6130/EX6/histogram" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="Beta EX6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_6130/EX6/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX6/agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_6130/EX6/colors_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX6/colors_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course_6130/EX6/ex6.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX6/ex6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +68,7 @@
       <recent name="C:\devl\work\6130 Python\course_6130\EX2" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.ex6">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,8 +241,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex4b_nitzan" />
         <item itemvalue="Python.ex6" />
+        <item itemvalue="Python.ex4b_nitzan" />
         <item itemvalue="Python.run_task" />
         <item itemvalue="Python.first_task" />
         <item itemvalue="Python.ex5tests_students" />
@@ -282,7 +278,7 @@
       <workItem from="1686059052071" duration="25051000" />
       <workItem from="1686498371927" duration="789000" />
       <workItem from="1686594702014" duration="7000" />
-      <workItem from="1687007936066" duration="9680000" />
+      <workItem from="1687007936066" duration="11551000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -312,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686497051670</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Beta EX6">
+      <created>1687019940819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687019940819</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +337,8 @@
     <MESSAGE value="21/05/23&#10;AsafKessler&#10;sdghj" />
     <MESSAGE value="finishing up EX5" />
     <MESSAGE value="11.06 &#10;starting EX6" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.06 &#10;starting EX6" />
+    <MESSAGE value="Beta EX6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta EX6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,3 +1,5 @@
+# 123456789, 123456789
+# 10
 import agent
 import colors_task as ct
 import pandas as pd
@@ -34,12 +36,11 @@ def test_agent(agent_instance):
 
     max_score = float(series_all_scores.max())
     avg_score = series_all_scores.mean()
-    series_all_scores.to_csv(r'C:\devl\work\6130 Python\course_6130\EX6\ComparingColorsAgent.csv')
     return [series_all_scores, max_score, avg_score]
 
 
 if __name__ == "__main__":
-    agent_n = agent.ColorBasedAgent()
+    agent_n = agent.ComparingColorsAgent()
     print(test_agent(agent_n))
 
 
