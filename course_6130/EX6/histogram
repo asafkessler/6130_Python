@@ -1,0 +1,28 @@
+def create_agent_scores_histogram(df):
+    # adding column name to the respective columns
+    df.columns = ['Game Number', 'Score']
+    df.sort_values(by="Score")
+
+
+# agents_data_frame = series_all_scores.to_frame()
+# A,B,C,D,E,F,G,H,I = create_agent_scores_histogram(agents_data_frame)
+#
+# hist_R = np.empty(shape=(2, 256))
+# hist_R[1] = A
+# hist_R[0] = 0
+# hist_G = np.empty(shape=(2, 256))
+# hist_G[1] = B
+# hist_G[0] = 0
+# hist_B = np.empty(shape=(2, 256))
+# hist_B[1] = C
+# hist_B[0] = 0
+#
+# fig, axs = screen.subplots(2, 2)
+# axs[0, 0].bar(x=range(0, 256), height=10, yerr=hist_R, ecolor=[1, 0, 0, 1])
+# axs[0, 0].set_title('0-9')
+# axs[0, 1].bar(x=range(0, 256), height=10, yerr=hist_G, ecolor=[0, 1, 0, 1])
+# axs[0, 1].set_title('10-19')
+# axs[1, 0].bar(x=range(0, 256), height=10, yerr=hist_B, ecolor=[0, 0, 1, 1])
+# axs[1, 0].set_title('20-29')
+# screen.title("Games Hist")
+# screen.show()

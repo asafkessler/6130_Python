@@ -1,4 +1,3 @@
-import pygame
 import agent
 import colors_task as ct
 import pandas as pd
@@ -28,26 +27,19 @@ def test_agent(agent_instance):
         # for each game the number of iterations
         # will be num_of_repetitions * 6 (combinatorics_options_of_colors) = 180
 
-        series_all_scores[index] = df["Reward"].sum()
+        series_all_scores[index] = df["Reward"].sum() # summation of the rewards in a specific game is the score.
 
         game = ct.SimpleDecisionTask(num_of_repetitions=30, manual_game=False,
                                      my_agent=agent_instance)
 
     max_score = float(series_all_scores.max())
-    # avg_score = float(series_all_scores.sum() / NUM_OF_ITERATIONS)
     avg_score = series_all_scores.mean()
-
+    series_all_scores.to_csv(r'C:\devl\work\6130 Python\course_6130\EX6\ComparingColorsAgent.csv')
     return [series_all_scores, max_score, avg_score]
-
-def test():
-    game = ct.ct.SimpleDecisionTask(num_of_repetitions=30, manual_game=False,
-                                 my_agent=agent.ColorBasedAgent)
-    game = ct.ct.SimpleDecisionTask(num_of_repetitions=30, manual_game=False,
-                                    my_agent=agent.RandomAgent)
 
 
 if __name__ == "__main__":
-    agent_n = agent.ComparingColorsAgent()
+    agent_n = agent.ColorBasedAgent()
     print(test_agent(agent_n))
 
 

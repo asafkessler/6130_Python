@@ -51,8 +51,8 @@ class SimpleDecisionTask(object):
         # update the probability of each color
         self.colors_prob = []
         self.update_color_probability()
-        print("Random Prod of each color:")
-        print(self.colors_prob)
+        # print("Random Prod of each color:")
+        # print(self.colors_prob)
 
         # randomly assign color for each round
         self.rounds = []
