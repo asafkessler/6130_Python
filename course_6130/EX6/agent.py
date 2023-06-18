@@ -100,10 +100,21 @@ class ColorBasedAgent(Agent):
         self.alpha = 0.2
 
     def make_decision(self, left_color, right_color):
+        """
+        This method calculates the color with the best odds of winning and returns the right key movement
+        to choose it.
+        Args:
+            left_color (): the color in the left section of the screen in the current round.
+            right_color (): the color in the right section of the screen in the current rond.
+
+        Returns:
+            The ket choice as a string "left" / "right"
+        """
         # set the last decision in order to use it in the reward processing stage
         self.last_left_color = left_color
         self.last_right_color = right_color
         self.last_choice = 0
+
         # create the color odds if the color is not included in the agent's memory
         if left_color not in self.stats_table:
             self.stats_table[left_color] = 0.5
@@ -111,7 +122,7 @@ class ColorBasedAgent(Agent):
         elif right_color not in self.stats_table:
             self.stats_table[right_color] = 0.5
 
-        #elif right_color and left_color in self.stats_table:
+        #else right_color and left_color in self.stats_table:
         else:
             if self.stats_table[left_color] > self.stats_table[right_color]:
                 self.last_choice = int(0)
@@ -126,7 +137,18 @@ class ColorBasedAgent(Agent):
         return ["left", "right"][self.last_choice]
 
     def get_reward(self, reward):
-        # the current color-coupling (Environment)
+        """
+        This method updates the odds for the last color that got choosen.
+        Increase if reward is +1
+        Decries if the reward is -1
+        Args:
+            reward (): The reward value for each round.
+
+        Returns:
+            None.
+            just updates the stat table.
+
+        """
 
         # if we choose the color on the right side(1) -> positive point should teach us to choose right(1).
         if self.last_choice == 1:

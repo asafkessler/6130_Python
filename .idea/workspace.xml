@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finish ex6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_6130/EX6/ex6.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX6/ex6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_6130/EX6/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX6/agent.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +282,7 @@
       <workItem from="1686498371927" duration="789000" />
       <workItem from="1686594702014" duration="7000" />
       <workItem from="1687007936066" duration="13415000" />
-      <workItem from="1687114240378" duration="418000" />
+      <workItem from="1687114240378" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -333,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687114478615</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finish ex6">
+      <created>1687114707209</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687114707209</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
