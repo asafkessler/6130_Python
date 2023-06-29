@@ -91,13 +91,7 @@ class RandomForest(object):
             for curr_tree in self.tree_list:
                 list_predictions.append(curr_tree.predict([curr_row])) # happens 5 by 101 times
 
-            forest_prediction = True
-            forest_result = sum(list_predictions)
-            if forest_result <= 50:
-                forest_prediction = False
-
-            final_prediction.append(forest_prediction) # happens 5 times
-
+            
 
         counter = 0
         other_label.reset_index(inplace=True, drop=True)

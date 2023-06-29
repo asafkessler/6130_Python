@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="Ex7 in the making">
-      <change afterPath="$PROJECT_DIR$/course_6130/EX7/sample_n1.csv" afterDir="false" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course_6130/EX7/ex7.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX7/ex7.py" afterDir="false" />
     </list>
@@ -165,6 +164,9 @@
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course_6130/EX7" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -289,7 +291,8 @@
       <workItem from="1687114240378" duration="1650000" />
       <workItem from="1687361808135" duration="816000" />
       <workItem from="1687779833677" duration="18940000" />
-      <workItem from="1687872357515" duration="4803000" />
+      <workItem from="1687872357515" duration="4960000" />
+      <workItem from="1687893187689" duration="1815000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -368,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687805202191</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finished">
+      <created>1687877559206</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687877559206</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +403,8 @@
     <MESSAGE value="Beta EX6" />
     <MESSAGE value="finish ex6" />
     <MESSAGE value="Ex7 in the making" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex7 in the making" />
+    <MESSAGE value="finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
