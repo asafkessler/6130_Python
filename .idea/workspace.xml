@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finished">
+      <change afterPath="$PROJECT_DIR$/course_6130/EX7/ex7- final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_6130/EX7/ex7.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_6130/EX7/ex7.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +65,11 @@
       <recent name="C:\devl\work\course_6130\EX2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\devl\work\6130 Python\course_6130\EX7" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX6" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX5" />
       <recent name="C:\devl\work\6130 Python\course_6130" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX4" />
-      <recent name="C:\devl\work\6130 Python\course_6130\EX2" />
     </key>
   </component>
   <component name="RunManager" selected="Python.ex7">
@@ -292,7 +293,9 @@
       <workItem from="1687361808135" duration="816000" />
       <workItem from="1687779833677" duration="18940000" />
       <workItem from="1687872357515" duration="4960000" />
-      <workItem from="1687893187689" duration="1815000" />
+      <workItem from="1687893187689" duration="1832000" />
+      <workItem from="1688288955361" duration="3919000" />
+      <workItem from="1688653773071" duration="4321000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -378,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687877559206</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finished">
+      <created>1688005274352</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688005274352</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
