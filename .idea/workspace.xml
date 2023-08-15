@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finished">
-      <change afterPath="$PROJECT_DIR$/course_6130/EX7/ex7- final.py" afterDir="false" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finished This course">
+      <change afterPath="$PROJECT_DIR$/Final Exam/EUR_ILS Historical Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final Exam/Question1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final Exam/USD_EUR Historical Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final Exam/exam23_partA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final Exam/exam23_partB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_6130/EX8/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_6130/EX9/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,14 +71,33 @@
       <recent name="C:\devl\work\course_6130\EX2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\devl\work\6130 Python\Final Exam" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX7" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX6" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX5" />
       <recent name="C:\devl\work\6130 Python\course_6130" />
-      <recent name="C:\devl\work\6130 Python\course_6130\EX4" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex7">
+  <component name="RunManager" selected="Python.Question1">
+    <configuration name="Question1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Exam/Question1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,20 +208,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="first_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exam23_partA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course_6130/EX6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course_6130/EX6/first_task.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Exam/exam23_partA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,35 +249,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="work" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course_6130/EX6" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course_6130/EX6/run_task.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Question1" />
+        <item itemvalue="Python.exam23_partA" />
         <item itemvalue="Python.ex7" />
         <item itemvalue="Python.ex6" />
         <item itemvalue="Python.ex4b_nitzan" />
-        <item itemvalue="Python.run_task" />
-        <item itemvalue="Python.first_task" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +295,9 @@
       <workItem from="1687872357515" duration="4960000" />
       <workItem from="1687893187689" duration="1832000" />
       <workItem from="1688288955361" duration="3919000" />
-      <workItem from="1688653773071" duration="4321000" />
+      <workItem from="1688653773071" duration="4486000" />
+      <workItem from="1692018293583" duration="713000" />
+      <workItem from="1692019026607" duration="18177000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -388,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688005274352</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="finished This course">
+      <created>1688932057236</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688932057236</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +423,8 @@
     <MESSAGE value="finish ex6" />
     <MESSAGE value="Ex7 in the making" />
     <MESSAGE value="finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished" />
+    <MESSAGE value="finished This course" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished This course" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
