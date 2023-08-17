@@ -53,7 +53,28 @@ class Triangle(Shape):
 
 
 if __name__ == "__main__":
-    s = Square([[1,2],[3,4],[1,3],[2,4]])
-    t = Triangle([[1,2],[3,4],[1,3]])
-    print(s.more_nodes(t))
-    print(s.more_nodes(s))
+    coordinates_square = [[1, 1], [2, 2], [0, 2], [7, 7]]
+    coordinates_triangle = [[1, 1], [2, 2], [0, 2]]
+    coordinates_error1 = [[1, 1], [2, 2], [0, 2]]
+    coordinates_error2 = []
+    coordinates_error3 = [[1, 1], [2, 2], [0, 2], [7, 7], [3, 4]]
+    square_instance = Square(coordinates_square)
+    triangle_instance = Triangle(coordinates_triangle)
+
+
+    def square_error_check(coordinates_error):
+        try:
+            Square(coordinates_error)
+            raise AssertionError("the Square constructor got an invalid parameter and didn't raise an error")
+        except ValueError:
+            pass
+
+
+    assert (square_instance.more_nodes(triangle_instance)) == True
+    assert (triangle_instance.more_nodes(triangle_instance)) == False
+    assert (triangle_instance.more_nodes(square_instance)) == False
+    square_error_check(coordinates_error1)
+    square_error_check(coordinates_error2)
+    square_error_check(coordinates_error3)
+
+    print("Question 2 passes all tests!\n")

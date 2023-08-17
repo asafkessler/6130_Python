@@ -1,7 +1,7 @@
 import glob
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 def get_file_name_list_in_folder(folder_path):
     files_names = glob.glob(folder_path + r'\*.csv')
@@ -26,16 +26,24 @@ def create_n_show_graphs(df_USD_in_ILS_helper, df_USD_in_ILS_final):
         None.
         presents a graph.
     """
+    # df_graph_data = df_USD_in_ILS_helper.iloc[::-1].reset_index(drop=True)
+    # # df_graph_data = df_graph_data.reset_index()
+    # # df_graph_data = df_graph_data.rename(columns={'index': 'chronological_order'})
+    # df_extreme_points_data = df_USD_in_ILS_final.merge(df_graph_data, how="inner",
+    #                                    on=["Year", "Month", "Day", "percent_change", "one_USD_in_ILS"])
+    #
+    # ax = df_graph_data.plot(x='chronological_order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
     df_graph_data = df_USD_in_ILS_helper.iloc[::-1].reset_index(drop=True)
-    df_graph_data = df_graph_data.reset_index(names='chronological order')
+    df_graph_data['chronological_order'] = df_graph_data.index  # Adding chronological_order column
+
     df_extreme_points_data = df_USD_in_ILS_final.merge(df_graph_data, how="inner",
-                                       on=["Year", "Month", "Day", "percent change", "one_USD_in_ILS"])
+                                                       on=["Year", "Month", "Day", "percent_change", "one_USD_in_ILS"])
 
-    ax = df_graph_data.plot(x='chronological order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
+    ax = df_graph_data.plot(x='chronological_order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
 
-    df_extreme_points_data.plot.scatter(x='chronological order', y='one_USD_in_ILS', label='extreme days', ax=ax,
-                                   linestyle='', c='r', alpha=1)
-    plt.pyplot.show()
+    # df_extreme_points_data.plot.scatter(x='chronological_order', y='one_USD_in_ILS', label='extreme days', ax=ax,
+    #                                linestyle='', c='r', alpha=1)
+    plt.show()
 
 
 # Q3
