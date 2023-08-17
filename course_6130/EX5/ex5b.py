@@ -53,7 +53,7 @@ def create_season_rating(csv_folder):
 
     final_df = seasons_rating
 
-    return (final_df)
+    return final_df
 
 
 # question 3
