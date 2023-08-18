@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="remote memory">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/Question2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/Question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final Exam/Try Q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Try Q3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,12 +50,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/devl/work/6130 Python/Final Exam/Q1_PlayGround",
+    "last_opened_file_path": "C:/Python37/python.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -68,18 +67,21 @@
       <recent name="C:\devl\work\course_6130\EX2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\devl\work\6130 Python\course_6130\EX5" />
       <recent name="C:\devl\work\6130 Python\Final Exam" />
+      <recent name="C:\devl\work\6130 Python\course_6130\EX5" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX7" />
       <recent name="C:\devl\work\6130 Python\course_6130\EX6" />
       <recent name="C:\devl\work\6130 Python\course_6130" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Question2">
+  <component name="RunManager" selected="Python.Try Q3 (2)">
     <configuration name="Question2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -99,6 +101,9 @@
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -118,6 +123,9 @@
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam/Q1_PlayGround" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -133,10 +141,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Try Q3 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/Hebrow Univarcity/First Year/Semester B/Python Cognitive Science/Final Exam" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/Hebrow Univarcity/First Year/Semester B/Python Cognitive Science/Final Exam/Try Q3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Try Q3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -196,25 +226,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exam23_partB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="work" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Exam/exam23_partB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Try Q3 (2)" />
+        <item itemvalue="Python.Try Q3" />
         <item itemvalue="Python.Question2" />
         <item itemvalue="Python.Question3" />
         <item itemvalue="Python.Try Q3 (1)" />
-        <item itemvalue="Python.Try Q3" />
-        <item itemvalue="Python.exam23_partB" />
       </list>
     </recent_temporary>
   </component>
@@ -291,6 +302,8 @@
       <workItem from="1692194212118" duration="22088000" />
       <workItem from="1692248695302" duration="821000" />
       <workItem from="1692257993187" duration="23325000" />
+      <workItem from="1692305595446" duration="1736000" />
+      <workItem from="1692307563041" duration="5032000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
