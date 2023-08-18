@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="order">
-      <change afterPath="$PROJECT_DIR$/Final Exam/Q1_PlayGround/q1_last.py" afterDir="false" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finished q 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/Q1_PlayGround/DAG_Board.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/Question1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Exam/Question2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Exam/Question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final Exam/exam23_partA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/exam23_partA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/q1_last.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Exam/exam23_partB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/exam23_partB.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <recent name="C:\devl\work\6130 Python\course_6130\EX7" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Question1">
+  <component name="RunManager" selected="Python.Question3">
     <configuration name="Question1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,17 +115,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Try Q3 (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Question3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam/Q3_PlayGround" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Exam/Q3_PlayGround/Try Q3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Exam/Question3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Question3" />
+        <item itemvalue="Python.Question2" />
         <item itemvalue="Python.Question1" />
         <item itemvalue="Python.q1_last" />
         <item itemvalue="Python.exam23_partA" />
-        <item itemvalue="Python.Try Q3 (3)" />
-        <item itemvalue="Python.Question2" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +294,7 @@
       <workItem from="1692257993187" duration="23325000" />
       <workItem from="1692305595446" duration="1736000" />
       <workItem from="1692307563041" duration="5057000" />
-      <workItem from="1692322561573" duration="7175000" />
+      <workItem from="1692322561573" duration="9404000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -444,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692326073701</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="finished q 1">
+      <created>1692330015184</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692330015184</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +482,8 @@
     <MESSAGE value="q 3 finished" />
     <MESSAGE value="q 3 finished real" />
     <MESSAGE value="order" />
-    <option name="LAST_COMMIT_MESSAGE" value="order" />
+    <MESSAGE value="finished q 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished q 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -512,18 +519,13 @@
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Final Exam/Question2.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Final Exam/Q1_PlayGround/recursion_python.py</url>
           <line>10</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Final Exam/exam23_partB.py</url>
-          <line>151</line>
+          <line>153</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
@@ -547,8 +549,8 @@
     <SUITE FILE_PATH="coverage/6130_Python$ex2a.coverage" NAME="ex2a Coverage Results" MODIFIED="1685629444162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX2" />
     <SUITE FILE_PATH="coverage/6130_Python$ex7.coverage" NAME="ex7 Coverage Results" MODIFIED="1687877440661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX7" />
     <SUITE FILE_PATH="coverage/6130_Python$recursion_python.coverage" NAME="recursion_python Coverage Results" MODIFIED="1692191708277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final Exam" />
-    <SUITE FILE_PATH="coverage/6130_Python$Question2.coverage" NAME="Question2 Coverage Results" MODIFIED="1692186939269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final Exam" />
     <SUITE FILE_PATH="coverage/6130_Python$exam23_partB.coverage" NAME="exam23_partB Coverage Results" MODIFIED="1692280884297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final Exam" />
+    <SUITE FILE_PATH="coverage/6130_Python$Question2.coverage" NAME="Question2 Coverage Results" MODIFIED="1692332463038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final Exam" />
     <SUITE FILE_PATH="coverage/6130_Python$ex4b_nitzan.coverage" NAME="ex4b_nitzan Coverage Results" MODIFIED="1687016773440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX4" />
     <SUITE FILE_PATH="coverage/6130_Python$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1685629542597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/6130_Python$first_task.coverage" NAME="first_task Coverage Results" MODIFIED="1686299766148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course_6130/EX6" />

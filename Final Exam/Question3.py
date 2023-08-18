@@ -45,14 +45,14 @@ def create_n_show_graphs(df_USD_in_ILS_helper, df_USD_in_ILS_final):
            presents graphs.
     """
     df_graph_data = df_USD_in_ILS_helper.iloc[::-1].reset_index(drop=True)
-    df_graph_data = df_graph_data.reset_index(names='x_time_order')
+    df_graph_data = df_graph_data.reset_index(names='x_days_order')
 
     df_extreme_points_data = df_USD_in_ILS_final.merge(df_graph_data, how="inner",
                                                        on=["Year", "Month", "Day", "percent_change", "one_USD_in_ILS"])
 
-    x_axis = df_graph_data.plot(x='x_time_order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
+    x_axis = df_graph_data.plot(x='x_days_order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
 
-    df_extreme_points_data.plot.scatter(x='x_time_order', y='one_USD_in_ILS', label='extreme_days', ax=x_axis,
+    df_extreme_points_data.plot.scatter(x='x_days_order', y='one_USD_in_ILS', label='extreme_days', ax=x_axis,
                                         linestyle='', c='r', alpha=1)
     plt.show()
 

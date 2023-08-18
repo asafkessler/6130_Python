@@ -1,10 +1,23 @@
+class Shape(object):
+    """
+        Shape: This is an abstract class for a geometrical object.
+                (for this specific exersice all the objects are 2D).
 
-class Shape:
+        Data members: <List> shape_dots.
 
-    # this is based on a OOP static class variable design.
+        Methods: comparison.
+    """
+
+    # A key to define geometric shape. (design based on a OOP static class variable)
     GEOMETRIC_SHAPE_KEY = 0
 
     def __init__(self, shape_dots):
+        """
+            Constractor.
+        Args:
+            shape_dots (): List<nodes>
+        """
+        # Checking if the users shape_dots list is in the right size for the relevant shape to create.
         if self.test_geometric_blueprint_input(shape_dots):
             self.l_dots = shape_dots
         else:
@@ -14,42 +27,37 @@ class Shape:
         return self.l_dots
 
     def print_shape(self):
-        print("N. Of dots:", self.get_nodes_number(self) , "Dots: ", print(self.l_dots))
+        print("N. Of dots:", len(self), "Dots: ", print(self.l_dots))
 
     def more_nodes(self, shape_obj):
-        return self.get_nodes_number(self.get()) > self.get_nodes_number(shape_obj.get())
+        """
+            This method checks if a given shape has more nodes than another shape.
+        Args:
+            shape_obj (): Shape.
+
+        Returns:
+            Boolean. True if self shape has more dots, False if not.
+        """
+        return len(self.get()) > len(shape_obj.get())
 
     def test_geometric_blueprint_input(self, shape_dots):
         return self.GEOMETRIC_SHAPE_KEY == len(shape_dots)
 
-    @staticmethod
-    def get_nodes_number(shape):
-        """
-        "Does it make sense to call this method, even if no object has been constructed yet?" -> Yes.
-        Args:
-            shape ():
 
-        Returns:
-        """
-        return len(shape)
-
-
-
-# Q2 -
-# 1. make sure that when creating an instance only one parameter is passed by the user
-# 2. make sure that the method name (not the constructor) is more_nodes
-# 3. XX should be replaced.
 class Square(Shape):
-
     GEOMETRIC_SHAPE_KEY = 4
+
     def __init__(self, square_dots):
-        Shape.__init__(self, square_dots) # if that checks on the key
+        # Creates a square using the parent constractor.
+        Shape.__init__(self, square_dots)
+
 
 class Triangle(Shape):
-
     GEOMETRIC_SHAPE_KEY = 3
+
     def __init__(self, triangle_dots):
-        Shape.__init__(self, triangle_dots) # if that checks on the key
+        # Creates a triangle using the parent constractor.
+        Shape.__init__(self, triangle_dots)
 
 
 if __name__ == "__main__":
