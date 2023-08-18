@@ -1,6 +1,5 @@
 # 316539196
 #
-import matplotlib
 import numpy as np
 
 # Q1 -
@@ -38,7 +37,7 @@ def find_max_path(board, starting_point):
 
     return max_path_sum
 
-# Q2 -
+########################## Q2 - Question 2 ##########################
 # 1. make sure that when creating an instance only one parameter is passed by the user
 # 2. make sure that the method name (not the constructor) is more_nodes
 # 3. XX should be replaced.
@@ -88,7 +87,7 @@ class Triangle(Shape):
     def __init__(self, triangle_dots):
         Shape.__init__(self, triangle_dots) # if that checks on the key
 
-# Q3 -
+########################## Q3 - Question 3 ##########################
 def extreme_changes(folder, num_extreme_days, show_graphs):
     pass
 
