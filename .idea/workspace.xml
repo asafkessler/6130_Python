@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finished q 1">
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="finished part a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/Question2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/Question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/exam23_partA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/exam23_partA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final Exam/exam23_partB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/exam23_partB.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +73,7 @@
       <recent name="C:\devl\work\6130 Python\course_6130\EX7" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Question3">
+  <component name="RunManager" selected="Python.exam23_partB">
     <configuration name="Question1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,7 +175,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exam23_partA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exam23_partB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,7 +185,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Exam/exam23_partA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Exam/exam23_partB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.exam23_partB" />
         <item itemvalue="Python.Question3" />
         <item itemvalue="Python.Question2" />
         <item itemvalue="Python.Question1" />
         <item itemvalue="Python.q1_last" />
-        <item itemvalue="Python.exam23_partA" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +291,7 @@
       <workItem from="1692257993187" duration="23325000" />
       <workItem from="1692305595446" duration="1736000" />
       <workItem from="1692307563041" duration="5057000" />
-      <workItem from="1692322561573" duration="9404000" />
+      <workItem from="1692322561573" duration="11743000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -450,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692330015184</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="finished part a">
+      <created>1692333003297</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1692333003298</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +487,8 @@
     <MESSAGE value="q 3 finished real" />
     <MESSAGE value="order" />
     <MESSAGE value="finished q 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished q 1" />
+    <MESSAGE value="finished part a" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished part a" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -522,11 +527,6 @@
           <url>file://$PROJECT_DIR$/Final Exam/Q1_PlayGround/recursion_python.py</url>
           <line>10</line>
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Final Exam/exam23_partB.py</url>
-          <line>153</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

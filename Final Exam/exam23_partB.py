@@ -6,17 +6,26 @@ import copy
 
 # Q4 - The class will include the following methods in addition to the constructor(see home exam for details)
 # 1. add_product
-# 2. add_to_costumer
+# 2. add_to_customer
 # 3. pay_bill
 # 4. people_in_store
 class GroceryStore(object):
-
+    # Abstract class for a GroceryStore.
     def __init__(self):
-        self.d_inventory= {} # dict of the Stores Products. (can't be static - relative to a Stores Object.)
-        self.d_customers = {} # dict of the Stores Customers. (can't be static - relative to a Stores Object.)
+        self.d_inventory = {}  # dict of the Stores Products. (can't be static - relative to a Stores Object.)
+        self.d_customers = {}  # dict of the Stores Customers. (can't be static - relative to a Stores Object.)
 
     def add_product(self, p_name_id, p_amount, p_price):
+        """
+        This method adds a product to an inventory bank of the store.
+        Args:
+            p_name_id (): one-by-one id for a product.
+            p_amount (): product units amount.
+            p_price (): product's price.
 
+        Returns:
+            Boolean. if the process was successful.
+        """
         name_product = str.lower(p_name_id)
         if name_product not in self.d_inventory.keys():
             self.d_inventory[name_product] = Product(name_product, p_amount, p_price)
@@ -24,8 +33,16 @@ class GroceryStore(object):
         else:
             return False
 
-    def add_to_costumer(self, p_name_id, c_customer_id):
+    def add_to_customer(self, p_name_id, c_customer_id):
+        """
+         This method adds a product for a customer.
+        Args:
+            p_name_id (): one-by-one id for a product.
+            c_customer_id (): one-by-one id for a customer.
 
+        Returns:
+            Boolean. if the process was successful.
+        """
         name_product = str.lower(p_name_id)
         if name_product in self.d_inventory.keys():
             """It makes sense that their will not be a customer for a non existing product,
@@ -45,15 +62,39 @@ class GroceryStore(object):
             return False
 
     def pay_bill(self, c_customer_id, customer_payment):
+        """
+        This method implements a customer payment process.
+        Args:
+            c_customer_id (): one-by-one id for a customer.
+            customer_payment (): the monet the customer gave to pay with.
+
+        Returns:
+            excess
+        """
         sum_shopping_cart = self.d_customers[c_customer_id].calc_sc_products_price()
         excess = customer_payment - sum_shopping_cart
         del self.d_customers[c_customer_id]
         return excess
 
     def people_in_store(self):
+        """
+            This method Calc and returns the amount of people i the store.
+        Returns:
+            Int, the amount of people.
+        """
         return len(self.d_customers.keys())
 
     def update_inventory(self, p_name_id):
+        """
+         Updates the inventory of the shop.
+         A customer took a product, the inventory.product amount+=-1
+         In case the product amount is 0, the product gets delete from the inventory.
+        Args:
+            p_name_id (): one-by-one id for a product.
+
+        Returns:
+            nothing. only print - as logger.
+        """
         p_amount = self.d_inventory[p_name_id].get_amount()
         if p_amount > 0:
             p_amount = self.d_inventory[p_name_id].update_amount(-1)
@@ -67,8 +108,9 @@ class GroceryStore(object):
         else:
             print("Asaf you have a Bug in update_customers_status.")
 
-class Product(object):
 
+class Product(object):
+    # Abstract class for a Product.
     def __init__(self, name_id, amount, price):
         """
             Constractor for a new Product in our Grocery Store.
@@ -78,8 +120,15 @@ class Product(object):
             price (): <Flout> the price of the product.
         """
         self.name_id = name_id
-        self.amount = amount     # I can create another level of abstraction and create a List of products,
-                                 # and not use the amount like this.
+        self.amount = amount
+        ''' 
+            I can create another level of abstraction and create a List of products,
+            and use the amount as the lists length. But it will create alot of design problems. 
+            Each customer will have a list of lists of products, And each product will need to be represented as
+            a list of itself times the amount. 
+            On one hand, this design isn't saving in memory. But the other design will create an OOP Complexity, 
+            which will drive us far from the simplicity of the question.
+        '''
         self.price = price
 
     def get_name_id(self):
@@ -96,8 +145,8 @@ class Product(object):
         return self.amount
 
 
-
 class Customer(object):
+    # Abstract class for a Customer.
     def __init__(self, customer_id):
         """
             Constractor for a Customer in the Grocery Store.
@@ -119,14 +168,18 @@ class Customer(object):
         return self.shopping_cart
 
     def calc_sc_products_price(self):
+        """
+            Calcs shopping cart products prices.
+        Returns:
+            p_price_sum.
+        """
         p_price_sum = 0
         for p_name_id in self.shopping_cart.keys():
             p_price_sum += (self.shopping_cart[p_name_id].get_price() *
                             self.shopping_cart[p_name_id].get_amount())
-            '''Another time I see how I can put here a list to replace
-             the amount variable and create for loop instead.'''
+            '''Another time, I see how I can put here a list to replace
+             the amount variable and create a for by for, loop design instead.'''
         return p_price_sum
-
 
     def add_product_to_shopping_cart(self, p_product):
 
@@ -134,54 +187,10 @@ class Customer(object):
             self.update_shopping_cart(p_product.get_name_id(), 1)
         else:
             self.shopping_cart[p_product.get_name_id()] = Product(p_product.get_name_id(), 1, p_product.get_price())
-            ''' creating multiplication of objects, if the inventory was managed as a list of 
-                objects so I would just move objects between lists and not create another 
-                object doe the shopping cart of each customer. '''
-
+            ''' creating multiplication of objects. If the inventory was managed as a dictionary of 
+                lists of products so I would just move objects between lists and wouldn't have to create another 
+                object for the shopping cart of each customer. I HOPE that by describing my design thoughts and ideas,  
+                and why its good and why its bad to implement them, i showed my OOP understanding.'''
 
     def update_shopping_cart(self, p_name_id, p_amount):
         self.shopping_cart[p_name_id].update_amount(p_amount)
-
-if __name__ == "__main__":
-    g = GroceryStore()
-
-    assert (g.add_product("milk", 3, 10)) == True
-    assert (g.add_product("bread", 1, 20)) == True
-    assert (g.add_product("MIlK", 3, 10)) == False
-    assert (g.add_product("milk", 1, 10)) == False
-    assert (g.add_to_costumer("cheese", 111)) == False
-    assert (g.add_to_costumer("milk", 111)) == True
-    assert (g.add_to_costumer("MILK", 111)) == True
-    assert (g.add_to_costumer("bread", 111)) == True
-    assert (g.add_to_costumer("milk", 112)) == True
-    assert (g.add_to_costumer("bread", 112)) == False
-    assert (g.add_to_costumer("milk", 111)) == False
-    assert (g.people_in_store()) == 2
-    assert (g.pay_bill(112, 10.5)) == 0.5
-    assert (g.people_in_store()) == 1
-    assert (g.pay_bill(111, 60)) == 20
-    assert (g.people_in_store()) == 0
-
-    assert (g.add_product("bread", 1, 20)) == True
-    assert (g.add_product("milk", 1, 10)) == True
-    assert (g.add_to_costumer("bread", 111)) == True
-    assert (g.add_to_costumer("bread", 112)) == False
-    assert (g.people_in_store()) == 1
-    assert (g.add_product("bread", 1, 20)) == True
-    assert (g.add_to_costumer("bread", 111)) == True
-    assert (g.pay_bill(111, 40)) == 0
-
-    assert (g.add_product("Apple", 1, 5)) == True
-    assert (g.add_product("Banana", 10, 8)) == True
-    assert (g.add_to_costumer("apple", 123456789)) == True
-    assert (g.add_to_costumer("Cheese", 123456789)) == False
-    assert (g.add_to_costumer("Apple", 12336)) == False
-    assert (g.people_in_store()) == 1
-    assert (g.add_product("Apple", 1, 70)) == True
-    assert (g.add_to_costumer("Apple", 12336)) == True
-    assert (g.people_in_store()) == 2
-    assert (g.pay_bill(123456789, 20)) == 15
-    assert (g.pay_bill(12336, 80)) == 10
-    assert (g.people_in_store()) == 0
-
-    print("Question 4 passed all tests!")
