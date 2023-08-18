@@ -45,14 +45,14 @@ def create_n_show_graphs(df_USD_in_ILS_helper, df_USD_in_ILS_final):
            presents graphs.
     """
     df_graph_data = df_USD_in_ILS_helper.iloc[::-1].reset_index(drop=True)
-    df_graph_data = df_graph_data.reset_index(names='x_time')
+    df_graph_data = df_graph_data.reset_index(names='x_time_order')
 
     df_extreme_points_data = df_USD_in_ILS_final.merge(df_graph_data, how="inner",
                                                        on=["Year", "Month", "Day", "percent_change", "one_USD_in_ILS"])
 
-    x_axis = df_graph_data.plot(x='x_time', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
+    x_axis = df_graph_data.plot(x='x_time_order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
 
-    df_extreme_points_data.plot.scatter(x='x_time', y='one_USD_in_ILS', label='extreme_days', ax=x_axis,
+    df_extreme_points_data.plot.scatter(x='x_time_order', y='one_USD_in_ILS', label='extreme_days', ax=x_axis,
                                         linestyle='', c='r', alpha=1)
     plt.show()
 
@@ -83,7 +83,8 @@ def extreme_changes(folder, num_extreme_days, show_graphs):
     df_USD_in_ILS_helper = df_EURO_in_ILS.merge(df_USD_in_EURO, how="inner", on=["Year", "Month", "Day"])
 
     df_USD_in_ILS_helper['one_USD_in_ILS'] = \
-        df_USD_in_ILS_helper.apply(lambda row: calc_rate_dollar_to_shekel(row['one_EURO_in_ILS'],row['one_USD_in_EUROS']), axis=1)
+        df_USD_in_ILS_helper.apply(
+            lambda row: calc_rate_dollar_to_shekel(row['one_EURO_in_ILS'], row['one_USD_in_EUROS']), axis=1)
 
     """ Logic: The previous one is actually the next one in order in the 
     dataframe. The Math Goes By: n-(n+1)(remember: next is back)/n+1. """
@@ -116,4 +117,16 @@ if __name__ == "__main__":
     NUM_EXTREME_DAYS = 6
     SHOW_GRAPHS = True
 
-    print(extreme_changes(FOLDER_PATH, NUM_EXTREME_DAYS, SHOW_GRAPHS))
+    extreme_changes(FOLDER_PATH, 10, True)
+
+    extreme_changes(FOLDER_PATH, 3, False)
+
+    assert (round(min(extreme_changes(FOLDER_PATH, 10, False)["percent_change"]), 4)) == -1.8635
+    assert (round(max(extreme_changes(FOLDER_PATH, 10, False)["percent_change"]), 4)) == 1.6112
+    assert (round(min(abs(extreme_changes(FOLDER_PATH, 10, False)["percent_change"])), 4)) == 1.1912
+    assert (round(min(extreme_changes(FOLDER_PATH, 10, False)["one_USD_in_ILS"]), 4)) == 3.4217
+    assert (list(extreme_changes(FOLDER_PATH, 10, False).columns)) == ['Year', 'Month', 'Day', 'one_USD_in_ILS',
+                                                                       'percent_change']
+    print("Question 3 - results of the data frame passed all tests!")
+    print("also, check by yourself whether the graph of 'extreme_changes' function is shown correctly, and only once"
+          " (for the first call of the function). \n")

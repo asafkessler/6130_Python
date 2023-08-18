@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="remote memory">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="q 3 finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final Exam/Question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Exam/Try Q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Try Q3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <recent name="C:\devl\work\6130 Python\course_6130" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Try Q3">
+  <component name="RunManager" selected="Python.Question3">
     <configuration name="Question2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,8 +243,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Try Q3" />
         <item itemvalue="Python.Question3" />
+        <item itemvalue="Python.Try Q3" />
         <item itemvalue="Python.Try Q3 (2)" />
         <item itemvalue="Python.Question2" />
         <item itemvalue="Python.Try Q3 (1)" />
@@ -299,7 +297,7 @@
       <workItem from="1692257993187" duration="23325000" />
       <workItem from="1692305595446" duration="1736000" />
       <workItem from="1692307563041" duration="5057000" />
-      <workItem from="1692322561573" duration="2868000" />
+      <workItem from="1692322561573" duration="3245000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -427,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692322308394</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="q 3 finished">
+      <created>1692325479058</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692325479058</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +461,8 @@
     <MESSAGE value="finished This course" />
     <MESSAGE value="test files" />
     <MESSAGE value="remote memory" />
-    <option name="LAST_COMMIT_MESSAGE" value="remote memory" />
+    <MESSAGE value="q 3 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="q 3 finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
