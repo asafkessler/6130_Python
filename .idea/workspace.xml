@@ -7,6 +7,7 @@
     <list default="true" id="5c943613-887c-4930-a20a-56d5f386e745" name="Changes" comment="remote memory">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Exam/Question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Question3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final Exam/Try Q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Exam/Try Q3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Python37/python.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Python37/python.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\devl\work\6130 Python\Final Exam\Q1_PlayGround" />
@@ -74,7 +75,7 @@
       <recent name="C:\devl\work\6130 Python\course_6130" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Try Q3 (2)">
+  <component name="RunManager" selected="Python.Try Q3">
     <configuration name="Question2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,9 +102,6 @@
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -164,9 +162,6 @@
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Exam" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -250,10 +245,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Try Q3 (2)" />
         <item itemvalue="Python.Try Q3" />
-        <item itemvalue="Python.Question2" />
         <item itemvalue="Python.Question3" />
+        <item itemvalue="Python.Try Q3 (2)" />
+        <item itemvalue="Python.Question2" />
         <item itemvalue="Python.Try Q3 (1)" />
       </list>
     </recent_temporary>
@@ -303,7 +298,8 @@
       <workItem from="1692248695302" duration="821000" />
       <workItem from="1692257993187" duration="23325000" />
       <workItem from="1692305595446" duration="1736000" />
-      <workItem from="1692307563041" duration="5032000" />
+      <workItem from="1692307563041" duration="5057000" />
+      <workItem from="1692322561573" duration="2868000" />
     </task>
     <task id="LOCAL-00001" summary="21/05/23&#10;AsafKessler&#10;sdghj">
       <created>1685458633650</created>
@@ -424,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692298900537</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="remote memory">
+      <created>1692322308394</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1692322308394</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

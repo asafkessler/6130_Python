@@ -3,46 +3,57 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def get_file_name_list_in_folder(folder_path):
+    """
+    This function creates a list of all csv files names in a given folder.
+    Csv File name =  full path names.
+
+    Args:
+        folder_path (): <String> a folder locate.
+
+    Returns:
+        <List> csv file names.
+    """
     files_names = glob.glob(folder_path + r'\*.csv')
     return list(files_names)
+
 
 def calc_rate_dollar_to_shekel(EUROinILS, USDinEURO):
     """
     e/s * d/e = d/s. dollar to shekel rate changer.
     Args:
-        EUROinILS ():
-        USDinEURO ():
+        EUROinILS (): EURO in ILS
+        USDinEURO (): USD in EURO
 
     Returns:
-
+        simple multiplication.
     """
     return EUROinILS * USDinEURO
+
 
 def create_n_show_graphs(df_USD_in_ILS_helper, df_USD_in_ILS_final):
     """
     This function creates the graph of the exchange rate through all the days in the original data.
+       It creates a scattered graph for the extreme days found by the algorthm.
+    Args:
+        df_USD_in_ILS_helper (): <pandas.DataFrame> all data.
+        df_USD_in_ILS_final (): <pandas.DataFrame> USD in ILS df data.
+
     Returns:
-        None.
-        presents a graph.
+         None.
+           presents graphs.
     """
-    # df_graph_data = df_USD_in_ILS_helper.iloc[::-1].reset_index(drop=True)
-    # # df_graph_data = df_graph_data.reset_index()
-    # # df_graph_data = df_graph_data.rename(columns={'index': 'chronological_order'})
-    # df_extreme_points_data = df_USD_in_ILS_final.merge(df_graph_data, how="inner",
-    #                                    on=["Year", "Month", "Day", "percent_change", "one_USD_in_ILS"])
-    #
-    # ax = df_graph_data.plot(x='chronological_order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
     df_graph_data = df_USD_in_ILS_helper.iloc[::-1].reset_index(drop=True)
-    df_graph_data['chronological_order'] = df_graph_data.index  # Adding chronological_order column
+    df_graph_data = df_graph_data.reset_index(names='x_time')
 
     df_extreme_points_data = df_USD_in_ILS_final.merge(df_graph_data, how="inner",
                                                        on=["Year", "Month", "Day", "percent_change", "one_USD_in_ILS"])
 
-    ax = df_graph_data.plot(x='chronological_order', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
+    x_axis = df_graph_data.plot(x='x_time', y='one_USD_in_ILS', label='ILS for USD', linestyle='-', alpha=0.5)
 
-    # df_extreme_points_data.plot.scatter(x='chronological_order', y='one_USD_in_ILS', label='extreme days', ax=ax,
-    #                                linestyle='', c='r', alpha=1)
+    df_extreme_points_data.plot.scatter(x='x_time', y='one_USD_in_ILS', label='extreme_days', ax=x_axis,
+                                        linestyle='', c='r', alpha=1)
     plt.show()
 
 
@@ -61,7 +72,7 @@ def extreme_changes(folder, num_extreme_days, show_graphs):
         df_USD_in_ILS by max rate days.
     """
 
-    # 1) first stage - get the information location
+    # 1) first stage - get the information location -> abstraction in case of more data in the future. (Not used).
     list_data_files_path = get_file_name_list_in_folder(folder)
 
     # 2) second stage - read the information
@@ -72,40 +83,37 @@ def extreme_changes(folder, num_extreme_days, show_graphs):
     df_USD_in_ILS_helper = df_EURO_in_ILS.merge(df_USD_in_EURO, how="inner", on=["Year", "Month", "Day"])
 
     df_USD_in_ILS_helper['one_USD_in_ILS'] = \
-        df_USD_in_ILS_helper.apply(lambda r: r['one_EURO_in_ILS'] * r['one_USD_in_EUROS'], axis = 1)
+        df_USD_in_ILS_helper.apply(lambda row: calc_rate_dollar_to_shekel(row['one_EURO_in_ILS'],row['one_USD_in_EUROS']), axis=1)
 
-    """LOGIC: The previous one is actually the next one in order in the 
-    dataframe. The Math Goes By: n-(n+1)(next is back)/n+1."""
+    """ Logic: The previous one is actually the next one in order in the 
+    dataframe. The Math Goes By: n-(n+1)(remember: next is back)/n+1. """
 
     df_USD_in_ILS_Reversed = df_USD_in_ILS_helper['one_USD_in_ILS'].shift(-1, fill_value=0)
 
     df_USD_in_ILS_helper['percent_change'] = ((df_USD_in_ILS_helper['one_USD_in_ILS'] -
                                                df_USD_in_ILS_Reversed) / df_USD_in_ILS_Reversed) * 100
 
-    # 4) fourth stage - rearranging the dara in the dataframe, relative to the rate change
-    df_USD_in_ILS_helper['percent_change_abs'] = df_USD_in_ILS_helper.apply(lambda r:
-                                                                            np.sqrt(r['percent_change'] ** 2), axis=1)
+    # 4) fourth stage - rearranging the data in the dataframe, relative to the rate change
+    df_USD_in_ILS_helper['percent_change_abs'] = df_USD_in_ILS_helper.apply(lambda row:
+                                                                            np.sqrt(row['percent_change'] ** 2), axis=1)
 
     sorting_dataframe = df_USD_in_ILS_helper.sort_values(by='percent_change_abs', ascending=False)
     df_USD_in_ILS_organized = sorting_dataframe.reset_index(drop=True)
 
     # 5) fifth stage - cutting the relevant num_extreme_days (num_extreme_days == num rows in dataframe)
-    df_extreme_days = df_USD_in_ILS_organized.iloc[1:num_extreme_days + 1]
+    df_extreme_days = df_USD_in_ILS_organized.iloc[1: num_extreme_days + 1]
     df_USD_in_ILS_final = df_extreme_days[["Year", "Month", "Day", "one_USD_in_ILS", "percent_change"]]
 
-
+    # if statement for graphs showing.
     if show_graphs:
         create_n_show_graphs(df_USD_in_ILS_helper, df_USD_in_ILS_final)
 
     return df_USD_in_ILS_final
 
 
-
-
 if __name__ == "__main__":
     FOLDER_PATH = r'C:\devl\work\6130 Python\Final Exam'
-    NUM_EXTREME_DAYS = 9
+    NUM_EXTREME_DAYS = 6
     SHOW_GRAPHS = True
 
-    print(extreme_changes(FOLDER_PATH, NUM_EXTREME_DAYS , SHOW_GRAPHS))
-
+    print(extreme_changes(FOLDER_PATH, NUM_EXTREME_DAYS, SHOW_GRAPHS))
